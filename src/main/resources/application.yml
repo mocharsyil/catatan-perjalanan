@@ -1,8 +1,8 @@
 server:
   port: 5432
 spring:
-  datasource:
-    url: jdbc:postgresql://ec2-44-194-4-127.compute-1.amazonaws.com/dejucurgvfcaoi
+  datasource: jdbc:postgresql://ec2-44-194-4-127.compute-1.amazonaws.com/dejucurgvfcaoi
+    url: postgres://bezcawoolmmhxv:c48b90d600cf8e2d1fdf7f40fca955281eef82b99e9b2bf73bcb6d59e52661b9@ec2-44-194-4-127.compute-1.amazonaws.com:5432/dejucurgvfcaoi
     username: bezcawoolmmhxv
     password: c48b90d600cf8e2d1fdf7f40fca955281eef82b99e9b2bf73bcb6d59e52661b9
   jpa:
