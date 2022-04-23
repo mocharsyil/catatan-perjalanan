@@ -38,10 +38,13 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                         "/webjars/**").permitAll()
                 .anyRequest().authenticated()
                 .and()
-                .formLogin()
-                .and()
                 .logout()
-                .permitAll();
+                .permitAll()
+                .and()
+                .formLogin(form -> form
+                        
+                        .loginPage("/login").permitAll()
+                        .failureUrl("/login?error=true"));
     }
 
 }
