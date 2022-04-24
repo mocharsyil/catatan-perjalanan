@@ -18,6 +18,11 @@ public class StudentServiceImpl implements StudentService {
         this.studentRepository =studentRepository;
     }
 
+    @Override
+    public Optional<Student> findByEmail(String email) {
+
+        return studentRepository.findByEmail(email);
+    }
 
     @Override
     public List<Student> getAllStudents() {
@@ -30,11 +35,7 @@ public class StudentServiceImpl implements StudentService {
         return studentRepository.findById(id);
     }
 
-    @Override
-    public Optional<Student> findByEmail(String email) {
 
-        return studentRepository.findByEmail(email);
-    }
 
     @Override
     public Student save(Student std) {

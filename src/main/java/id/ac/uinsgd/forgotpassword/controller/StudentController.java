@@ -44,7 +44,7 @@ public class StudentController {
         student.setFirstName(newStd.getFirstName());
         student.setLastName(newStd.getLastName());
         student.setEmail(newStd.getEmail());
-        student.setPhone(newStd.getPhone());
+        student.setPhoneNumber(newStd.getPhoneNumber());
         return studentservice.save(student);
     }
 

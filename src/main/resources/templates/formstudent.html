@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Create Students CRUD Examp</title>
+    <title>Catatan Perjalanan</title>
 
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
@@ -19,7 +19,7 @@
 <body>
 
 <div class="container">
-    <h2>Form Students</h2>
+    <h2>Menambahkan Catatan</h2>
 </div>
 
 <div class="container">
@@ -43,23 +43,31 @@
                 </div>
 
                 <div class="form-group">
-                    <label class="col-sm-2 control-label">Email: </label>
+                    <label class="col-sm-2 control-label">Tanggal Pergi: </label>
                     <div class="col-sm-10">
-                        <input class="form-control" th:field="*{email}" type="text" id="email" placeholder="Email" required>
+                        <input class="form-control" th:field="*{tanggal1}" type="text" id="tanggal1" placeholder="tanggal pergi" required>
                     </div>
                 </div>
 
                 <div class="form-group">
-                    <label class="col-sm-2 control-label">Phonenumber: </label>
+                    <label class="col-sm-2 control-label">Tanggal Pulang: </label>
                     <div class="col-sm-10">
-                        <input class="form-control" th:field="*{phone}" type="text" id="phonenumber" placeholder="Nomor Telepon" required>
+                        <input class="form-control" th:field="*{tanggal2}" type="text" id="tanggal2" placeholder="tanggal pulang" required>
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">Kota Asal: </label>
+                    <div class="col-sm-10">
+                        <input class="form-control" th:field="*{kota1}" type="text" id="kota1" placeholder="Kota Asal" required>
                     </div>
                 </div>
 
                 <div class="form-group">
-                    <label class="col-sm-2 control-label">Jurusan: </label>
+                    <label class="col-sm-2 control-label">Kota Tujuan: </label>
                     <div class="col-sm-10">
-                        <input class="form-control" th:field="*{jurusan}" type="text" id="jurusan" placeholder="Nomor Jurusan" required>
+                        <input class="form-control" th:field="*{kota2}" type="text" id="kota2" placeholder="Kota Tujuan" required>
                     </div>
                 </div>
 
