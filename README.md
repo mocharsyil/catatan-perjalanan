@@ -1,20 +1,28 @@
-# forgot-password
+# Catatan-Perjalanan
 
 Screenshoot
 
 Login
-![Screenshootlogin](https://github.com/mocharsyil/forgot-password/blob/main/img/Screenshot%20(325).png)
+![Screenshootlogin](https://github.com/mocharsyil/forgot-password/blob/master/img/Screenshot%20(342).png)
 
 Daftar
-![Screenshootdaftar1](https://github.com/mocharsyil/forgot-password/blob/main/img/Screenshot%20(328).png)
+![Screenshootdaftar1](https://github.com/mocharsyil/forgot-password/blob/master/img/Screenshot%20(343).png)
 
-![Screenshootdaftar2](https://github.com/mocharsyil/forgot-password/blob/main/img/Screenshot%20(324).png)
+![Screenshootdaftar2](https://github.com/mocharsyil/forgot-password/blob/master/img/Screenshot%20(344).png)
 
 Reset Password
 ![Screenshootreset](https://github.com/mocharsyil/forgot-password/blob/main/img/Screenshot%20(323).png)
 
 Index
-![Screenshootindex](https://github.com/mocharsyil/forgot-password/blob/main/img/Screenshot%20(326).png)
+![Screenshootindex](https://github.com/mocharsyil/forgot-password/blob/master/img/Screenshot%20(349).png)
+
+Index add
+![Screenshootindexadd](https://github.com/mocharsyil/forgot-password/blob/master/img/Screenshot%20(350).png)
+
+forgot password
+![Screenshootforgot](https://github.com/mocharsyil/forgot-password/blob/master/img/Screenshot%20(351).png)
+
+
 
 email
 ![Screenshootemail](https://github.com/mocharsyil/forgot-password/blob/main/img/Screenshot%20(329).png)
