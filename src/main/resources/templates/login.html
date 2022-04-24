@@ -56,21 +56,20 @@
                                     <div class="form-input-material" tiles:fragment="content">
                                     <form th:action="@{/login}" method="post">
                                     <div class="section text-center">
-                                        <h3 class="mb-4 pb-3">Log In</h3>
+                                        <h4 class="mb-4 pb-3">Log In</h4>
                                         <div th:if="${param.error}" class="alert alert-error">
                                             Invalid username and password.
                                         </div>
                                         <div class="form-group">
                                             <label for="username"><p>Username</p></label>
-                                            <input type="text" name="username" class="form-style2" placeholder="Your Email" id="username" >
+                                            <input type="text" name="username" class="form-style" placeholder="Your Email" id="username" >
                                             <i class="input-icon uil uil-at"></i>
                                         </div>
                                         <div class="form-group mt-2">
                                             <label for="password"><p>Password</p></label>
-                                            <input type="password" name="password" class="form-style2" placeholder="Your Password" id="password" >
+                                            <input type="password" name="password" class="form-style" placeholder="Your Password" id="password" >
                                             <i class="input-icon uil uil-lock-alt"></i>
                                         </div>
-                                        <br>
                                         <button type="submit" class="btn mt-4">Log in</button>
                                         <p class="mb-0 mt-4 text-center"><a href="/forgot-password" class="link">Forgot your password?</a></p>
                                     </div>
@@ -81,21 +80,58 @@
                             <div class="card-back">
                                 <div class="center-wrap">
                                     <div class="section text-center">
+                                        <div th:if="${success}">
+                                            <div class="alert alert-success"><span th:text="${success}"></span></div>
+                                        </div>
+                                        <div th:if="${error}">
+                                            <div class="alert alert-danger"><span th:text="${error}"></span></div>
+                                        </div>
+                                        <form  th:action="@{/signup}" method="post" th:object="${user}">
                                         <h4 class="mb-4 pb-3">Sign Up</h4>
+
+
                                         <div class="form-group">
-                                            <input type="text" name="logname" class="form-style" placeholder="Your Full Name" id="logname" autocomplete="off">
+
+                                            <input aria-describedby="basic-addon1" class="form-style2" id="firstName"
+                                                   placeholder="First Name" th:errorClass="is-invalid"
+                                                   th:field="*{firstName}" type="text"/>
                                             <i class="input-icon uil uil-user"></i>
+                                            <span class="text-danger"
+                                                  th:errors="*{firstName}"
+                                                  th:if="${#fields.hasErrors('firstName')}"></span>
                                         </div>
+
+
                                         <div class="form-group mt-2">
-                                            <input type="email" name="logemail" class="form-style" placeholder="Your Email" id="logemail" autocomplete="off">
+                                            <input aria-describedby="basic-addon1" class="form-style2" id="lastName"
+                                                   placeholder="Last Name" th:errorClass="is-invalid"
+                                                   th:field="*{lastName}" type="text"/>
                                             <i class="input-icon uil uil-at"></i>
+                                            <span class="text-danger"
+                                                  th:errors="*{lastName}"
+                                                  th:if="${#fields.hasErrors('lastName')}"></span>
                                         </div>
                                         <div class="form-group mt-2">
-                                            <input type="password" name="logpass" class="form-style" placeholder="Your Password" id="logpass" autocomplete="off">
+                                            <input aria-describedby="basic-addon3" class="form-style2" id="email"
+                                                   placeholder="Email Address" th:errorClass="is-invalid"
+                                                   th:field="*{email}" type="text"/>
                                             <i class="input-icon uil uil-lock-alt"></i>
+                                            <span class="text-danger"
+                                                  th:errors="*{email}"
+                                                  th:if="${#fields.hasErrors('email')}"></span>
                                         </div>
-                                        <br>
-                                        <a href="#" class="btn mt-4">submit</a>
+                                            <div class="form-group mt-2">
+                                                <input aria-describedby="basic-addon4" class="form-style2" id="password"
+                                                       placeholder="Password" th:errorClass="is-invalid"
+                                                       th:field="*{password}" type="password"/>
+                                                <i class="input-icon uil uil-lock-alt"></i>
+                                                <span class="text-danger"
+                                                      th:errors="*{password}"
+                                                      th:if="${#fields.hasErrors('password')}"></span>
+                                            </div>
+                                            <button class="btn mt-4" type="submit">Register</button>
+
+                                        </form>
                                     </div>
                                 </div>
                             </div>
