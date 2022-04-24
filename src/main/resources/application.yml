@@ -1,10 +1,10 @@
 server:
-  port: 8080
+  port: 5432
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/catperjalanan
-    username: postgres
-    password: monstar
+    url: jdbc:postgresql://ec2-3-218-171-44.compute-1.amazonaws.com:5432/d2slhss8bs7k75
+    username: tywkfsbovadonh
+    password: 2e194a0b4ea1ad4024dbf0b3189384c7726710245b7279c59e98cc39492ef387
   jpa:
     hibernate:
       ddl-auto: update
