@@ -10,6 +10,7 @@
 
     <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
     <link rel="icon" th:href="@{/img/img.png}">
+    <link rel="stylesheet" th:href="@{/css/formcp.css}">
 
     <script th:src="@{/js/bootstrap.min.js}" type="text/javascript"></script>
     <script th:src="@{/js/jquery-3.3.1.slim.min.js}" type="text/javascript"></script>
@@ -19,65 +20,63 @@
 <body>
 
 <div class="container">
+    <br>
     <h2>Menambahkan Catatan</h2>
 </div>
-
 <div class="container">
     <div class="row">
         <div class="col-sm-8">
             <form class="form-horizontal" method="post" th:action="@{/create}" th:object="${student}">
                 <input th:field="*{id}" type="hidden"/>
-
                 <div class="form-group">
                     <label class="col-sm-4 control-label">Nama Depan: </label>
-                    <div class="col-sm-8">
-                        <input class="form-control" th:field="*{firstName}" type="text" id="firstName" placeholder="Nama Depan" required>
-                    </div>
+                        <div class="col-sm-10">
+                            <input class="form-style" th:field="*{firstName}" type="text" id="firstName" placeholder="Nama Depan" required>
+                        </div>
                 </div>
 
                 <div class="form-group">
                     <label class="col-sm-4 control-label">Nama Belakang: </label>
-                    <div class="col-sm-10">
-                        <input class="form-control" th:field="*{lastName}" type="text" id="lastName" placeholder="Nama Belakang" required>
-                    </div>
+                        <div class="col-sm-10">
+                            <input class="form-style" th:field="*{lastName}" type="text" id="lastName" placeholder="Nama Belakang" required>
+                        </div>
                 </div>
 
                 <div class="form-group">
                     <label class="col-sm-2 control-label">Tanggal Pergi: </label>
                     <div class="col-sm-10">
-                        <input class="form-control" th:field="*{tanggal1}" type="text" id="tanggal1" placeholder="tanggal pergi" required>
+                        <input class="form-style" th:field="*{tanggal1}" type="text" id="tanggal1" placeholder="tanggal pergi" required>
                     </div>
                 </div>
 
                 <div class="form-group">
                     <label class="col-sm-2 control-label">Tanggal Pulang: </label>
                     <div class="col-sm-10">
-                        <input class="form-control" th:field="*{tanggal2}" type="text" id="tanggal2" placeholder="tanggal pulang" required>
+                        <input class="form-style" th:field="*{tanggal2}" type="text" id="tanggal2" placeholder="tanggal pulang" required>
                     </div>
                 </div>
-
 
                 <div class="form-group">
                     <label class="col-sm-2 control-label">Kota Asal: </label>
                     <div class="col-sm-10">
-                        <input class="form-control" th:field="*{kota1}" type="text" id="kota1" placeholder="Kota Asal" required>
+                        <input class="form-style" th:field="*{kota1}" type="text" id="kota1" placeholder="Kota Asal" required>
                     </div>
                 </div>
 
                 <div class="form-group">
                     <label class="col-sm-2 control-label">Kota Tujuan: </label>
                     <div class="col-sm-10">
-                        <input class="form-control" th:field="*{kota2}" type="text" id="kota2" placeholder="Kota Tujuan" required>
+                        <input class="form-style" th:field="*{kota2}" type="text" id="kota2" placeholder="Kota Tujuan" required>
                     </div>
                 </div>
 
                 <div class="form-group">
+                    <br>
                     <input class="btn btn-success" type="submit" value="Save">
-                    <a class="btn btn-danger" role="button" th:href="@{/}">Back</a>
+                    <a class="btn2 btn-danger" role="button" th:href="@{/}">Back</a>
                 </div>
             </form>
         </div>
     </div>
 </div>
-
 </body>

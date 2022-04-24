@@ -2,9 +2,9 @@ server:
   port: 8080
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/forgot
+    url: jdbc:postgresql://localhost:5432/catperjalanan
     username: postgres
-    password: monster
+    password: monstar
   jpa:
     hibernate:
       ddl-auto: update
