@@ -10,8 +10,6 @@ Daftar
 
 ![Screenshootdaftar2](https://github.com/mocharsyil/catatan-perjalanan/blob/master/img/Screenshot%20(344).png)
 
-Reset Password
-![Screenshootreset](https://github.com/mocharsyil/catatan-perjalanan/blob/main/img/Screenshot%20(323).png)
 
 Index
 ![Screenshootindex](https://github.com/mocharsyil/catatan-perjalanan/blob/master/img/Screenshot%20(349).png)
